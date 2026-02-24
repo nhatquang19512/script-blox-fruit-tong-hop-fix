@@ -1,0 +1,63 @@
+repeat wait() until game:IsLoaded()
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Script Hub",
+   LoadingTitle = "Loading...",
+   LoadingSubtitle = "by Quang1905", -- ✅ đã đổi ở đây
+   ConfigurationSaving = {
+      Enabled = false,
+   }
+})
+
+local Tab = Window:CreateTab("Main", 4483362458)
+
+-- REDZHUB
+Tab:CreateButton({
+   Name = "RedzHub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/longhihilonghihi-hub/RedzHub/refs/heads/main/RedzHubv1.txt"))()
+   end
+})
+
+-- MARUHUB
+Tab:CreateButton({
+   Name = "MaruHub by longhihi",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/longhihilonghihi-hub/MaruHubV1/refs/heads/main/MainV1.Lua"))()
+   end
+})
+
+-- BANANAHUB
+Tab:CreateButton({
+   Name = "BananaHub getkey6h",
+   Callback = function()
+      getgenv().Team = "Marines"
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/obiyeueim/vthangsitink/main/BananaHub.lua"))()
+   end
+})
+
+-- QUANTUMHUB
+Tab:CreateButton({
+   Name = "QuantumHub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+   end
+})
+
+-- GRAVITYHUB
+Tab:CreateButton({
+   Name = "GravityHub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+   end
+})
+
+-- NIGHTHUB HOPSV
+Tab:CreateButton({
+   Name = "NightHub HopSV",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/HopScript.luau"))()
+   end
+})
